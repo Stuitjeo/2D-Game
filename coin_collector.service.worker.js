@@ -4,20 +4,20 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1742967433|26070209405';
+const CACHE_VERSION = '1742967896|26533268857';
 /** @type {string} */
 const CACHE_PREFIX = '2D-Games-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
-const OFFLINE_URL = 'coin-collector.offline.html';
+const OFFLINE_URL = 'coin_collector.offline.html';
 /** @type {boolean} */
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["coin-collector.html","coin-collector.js","coin-collector.offline.html","coin-collector.icon.png","coin-collector.apple-touch-icon.png","coin-collector.worker.js","coin-collector.audio.worklet.js"];
+const CACHED_FILES = ["coin_collector.html","coin_collector.js","coin_collector.offline.html","coin_collector.icon.png","coin_collector.apple-touch-icon.png","coin_collector.worker.js","coin_collector.audio.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHABLE_FILES = ["coin-collector.wasm","coin-collector.pck","coin-collector.side.wasm"];
+const CACHABLE_FILES = ["coin_collector.wasm","coin_collector.pck","coin_collector.side.wasm"];
 const FULL_CACHE = CACHED_FILES.concat(CACHABLE_FILES);
 
 self.addEventListener('install', (event) => {
